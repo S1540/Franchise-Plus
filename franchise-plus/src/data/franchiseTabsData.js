@@ -126,3 +126,54 @@ export const franchiseTabsData = [
     ],
   },
 ];
+
+export const Faqs = [
+  {
+    id: 1,
+    question: "What is a franchise business?",
+    answer:
+      "A franchise business allows individuals to operate a business using an established brand, proven systems, and ongoing support from the parent company.",
+  },
+  {
+    id: 2,
+    question: "Do you provide complete franchise support?",
+    answer:
+      "Yes, we provide end-to-end franchise support including pre-opening guidance, ongoing operational assistance, and marketing support.",
+  },
+  {
+    id: 3,
+    question: "What kind of training is provided before opening?",
+    answer:
+      "We offer structured training programs covering operations, staff management, customer handling, and brand standards before the franchise launch.",
+  },
+  {
+    id: 4,
+    question: "Is marketing support included after opening?",
+    answer:
+      "Yes, we support franchise partners with digital marketing, local promotions, branding materials, and lead generation strategies.",
+  },
+  {
+    id: 5,
+    question: "What is the initial investment required?",
+    answer:
+      "The initial investment depends on the business model and location. Our team provides detailed investment guidance during the consultation process.",
+  },
+  {
+    id: 6,
+    question: "Will I receive ongoing operational support?",
+    answer:
+      "Absolutely. We provide continuous operational support, performance monitoring, and regular updates to ensure smooth business operations.",
+  },
+  {
+    id: 7,
+    question: "How long does it take to start a franchise?",
+    answer:
+      "The franchise setup timeline varies, but typically it takes a few weeks depending on location readiness, training completion, and documentation.",
+  },
+  {
+    id: 8,
+    question: "How can I apply to become a franchise partner?",
+    answer:
+      "You can apply by filling out the franchise inquiry form on our website. Our team will contact you to guide you through the next steps.",
+  },
+];

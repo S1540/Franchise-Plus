@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Services", link: "/services" },
     {
       name: "Franchise",
       href: "#franchise",
@@ -19,7 +20,7 @@ const Header = () => {
         { name: "Support & Training", href: "#support" },
       ],
     },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", link: "/contact" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -31,12 +32,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex flex-col shrink-0">
-            <a
-              href="#"
+            <Link
+              to={"/"}
               className="text-2xl font-bold text-white uppercase cursor-pointer hover:text-amber-400 transition-colors duration-300"
             >
               Franchise-Plus
-            </a>
+            </Link>
             <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">
               Get Better | Set Better
             </span>
@@ -77,12 +78,13 @@ const Header = () => {
                     </div>
                   </div>
                 ) : (
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.link}
+                    key={index}
                     className="text-gray-300 hover:text-amber-400 transition-colors duration-200 font-medium"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
