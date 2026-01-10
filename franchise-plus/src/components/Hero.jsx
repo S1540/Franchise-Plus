@@ -5,7 +5,7 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-950 to-black">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-linear-to-br from-gray-900 via-gray-950 to-black">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-96 h-96 bg-amber-700 rounded-full blur-3xl animate-pulse" />
@@ -25,19 +25,19 @@ const Hero = () => {
 
             {/* Heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight">
+              <h1 className="text-3xl sm:text-4xl font-black leading-tight uppercase">
                 <span className="block text-white">Build The</span>
-                <span className="block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
+                <span className="block bg-linear-to-r from-amber-400 via-amber-500 to-amber-600 bg-clip-text text-transparent">
                   Future Today
                 </span>
               </h1>
 
               {/* Underline */}
-              <div className="w-32 h-1.5 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full" />
+              <div className="w-32 h-1.5 bg-linear-to-r from-amber-500 to-amber-700 rounded-full" />
             </div>
 
             {/* Description */}
-            <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
+            <p className="text-base text-gray-300 leading-relaxed max-w-xl">
               Unleash unprecedented potential with our next-generation platform.
               Experience seamless integration, lightning-fast performance, and
               tools that adapt to your vision.
@@ -68,7 +68,7 @@ const Hero = () => {
                 { value: "4.9★", label: "Rating" },
               ].map((stat, idx) => (
                 <div key={idx} className="group cursor-pointer">
-                  <div className="text-3xl font-black bg-gradient-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-3xl font-black bg-linear-to-br from-amber-400 to-amber-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
                     {stat.value}
                   </div>
                   <div className="text-sm text-gray-400 font-medium">
@@ -92,14 +92,14 @@ const Hero = () => {
                 alt="Team collaboration"
                 className="w-full h-auto object-cover"
               />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-900/60 via-transparent to-transparent" />
+              {/* linear Overlay */}
+              <div className="absolute inset-0 bg-linear-to-t from-amber-900/60 via-transparent to-transparent" />
             </div>
 
             {/* Floating Stats Cards */}
             <div className="absolute -top-12 -left-6 bg-white/10 backdrop-blur-lg rounded-lg p-4 border border-amber-500/30 shadow-xl hidden lg:block animate-bounce">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-12 h-12 bg-linear-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                   ✓
                 </div>
                 <div>
@@ -111,7 +111,7 @@ const Hero = () => {
 
             <div className="absolute -bottom-16 -right-6 bg-white/10 backdrop-blur-lg rounded-lg p-4 border border-green-500/30 shadow-xl hidden lg:block animate-bounce">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-12 h-12 bg-linear-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                   ↑
                 </div>
                 <div>

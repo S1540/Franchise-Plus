@@ -14,10 +14,10 @@ const Header = () => {
       name: "Franchise",
       href: "#franchise",
       dropdown: [
-        { name: "Become a Franchisee", href: "#become-franchisee" },
-        { name: "Success Stories", href: "#success-stories" },
-        { name: "Investment Details", href: "#investment" },
-        { name: "Support & Training", href: "#support" },
+        { name: "Become a Franchisee", link: "#become-franchisee" },
+        { name: "Success Stories", link: "#success-stories" },
+        { name: "Investment Details", link: "#investment" },
+        { name: "Support & Training", link: "#support" },
       ],
     },
     { name: "Contact", link: "/contact" },
@@ -66,13 +66,13 @@ const Header = () => {
                     >
                       <div className="py-2">
                         {link.dropdown.map((item, idx) => (
-                          <a
+                          <Link
                             key={idx}
-                            href={item.href}
+                            to={item.href}
                             className="block px-4 py-2 text-sm text-gray-300 hover:bg-amber-700/20 hover:text-amber-400 transition-colors duration-150 rounded-md mx-2"
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -95,7 +95,7 @@ const Header = () => {
             <button className="px-4 py-2 text-gray-300 hover:text-amber-400 font-medium transition-colors duration-200 cursor-pointer">
               Sign In
             </button>
-            <button className="px-6 py-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all duration-200 shadow-lg hover:shadow-amber-900/80 cursor-pointer font-medium hover:scale-105">
+            <button className="px-6 py-2 bg-linear-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all duration-200 shadow-lg hover:shadow-amber-900/80 cursor-pointer font-medium hover:scale-105">
               Get Started
             </button>
           </div>
@@ -136,24 +136,25 @@ const Header = () => {
                     {dropdownOpen && (
                       <div className="bg-gray-900/70 py-2 rounded-lg mt-2">
                         {link.dropdown.map((item, idx) => (
-                          <a
+                          <Link
                             key={idx}
-                            href={item.href}
+                            to={item.href}
                             className="block px-8 py-2 text-sm text-gray-400 hover:text-amber-400 transition-colors duration-150"
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 ) : (
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.link}
+                    onClick={() => setIsOpen(false)}
                     className="block px-4 py-3 text-gray-300 hover:bg-amber-700/20 hover:text-amber-400 transition-colors duration-150 font-medium rounded-lg"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
@@ -163,7 +164,7 @@ const Header = () => {
               <button className="w-full px-4 py-2 text-amber-400 border border-amber-700 rounded-lg hover:bg-amber-700/20 transition-colors duration-200 font-medium">
                 Sign In
               </button>
-              <button className="w-full px-6 py-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-colors duration-200 shadow-lg font-medium">
+              <button className="w-full px-6 py-2 bg-linear-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-colors duration-200 shadow-lg font-medium">
                 Get Started
               </button>
             </div>
