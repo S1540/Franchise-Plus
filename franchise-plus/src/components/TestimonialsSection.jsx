@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
   }, [currentIndex]);
 
   const renderStars = (rating) => (
-    <div className="flex gap-1">
+    <div className="flex gap-1 justify-center sm:justify-start text-center">
       {[...Array(5)].map((_, index) => (
         <Star
           key={index}
@@ -161,7 +161,7 @@ const TestimonialsSection = () => {
           </button>
 
           {/* DOTS */}
-          <div className="flex justify-center gap-3 mt-8">
+          <div className="flex justify-center items-center gap-3 mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
