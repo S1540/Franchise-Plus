@@ -5,7 +5,7 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-linear-to-br from-gray-900 via-gray-950 to-black">
+    <section className="relative flex items-center overflow-hidden bg-linear-to-br from-gray-900 via-gray-950 to-black">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-96 h-96 bg-amber-700 rounded-full blur-3xl animate-pulse" />

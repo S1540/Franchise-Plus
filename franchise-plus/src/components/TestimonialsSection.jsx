@@ -148,14 +148,14 @@ const TestimonialsSection = () => {
           {/* CONTROLS */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-12 h-12 bg-gray-800/80 hover:bg-amber-600 border border-amber-500/30 rounded-full flex items-center justify-center transition-all"
+            className=" hidden absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-12 h-12 bg-gray-800/80 hover:bg-amber-600 border border-amber-500/30 rounded-full sm:flex items-center justify-center transition-all"
           >
             <ChevronLeft className="text-white" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 w-12 h-12 bg-gray-800/80 hover:bg-amber-600 border border-amber-500/30 rounded-full flex items-center justify-center transition-all"
+            className="hidden absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 w-12 h-12 bg-gray-800/80 hover:bg-amber-600 border border-amber-500/30 rounded-full sm:flex items-center justify-center transition-all"
           >
             <ChevronRight className="text-white" />
           </button>
